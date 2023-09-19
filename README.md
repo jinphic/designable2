@@ -4,14 +4,9 @@
 
 ---
 
-## Introduction
+<span style="font-size: 24px">fork from <a href="https://github.com/alibaba/designable">designable</a> The original repository has been discontinued, so I forked a copy to continue open sourcing it. Friends who are interested can join in.</span>
 
-If you are worrying about something builder, Such as form builder/table builder/chart builder/app builder etc.
-Designable is your perfect choice.
-
-## Screenshot
-
-<img src="https://img.alicdn.com/imgextra/i1/O1CN01UYmA8f1apczHZRygt_!!6000000003379-2-tps-3040-1802.png" style="box-shadow:0px 0px 20px #aaa;border:1px solid #ddd"/>
+原仓库已暂停维护，故而 fork 一份继续开源，有兴趣的朋友可以加入
 
 ## Features
 
