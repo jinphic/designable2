@@ -1,1 +1,1 @@
-# @designable/core
+# @designable2/core

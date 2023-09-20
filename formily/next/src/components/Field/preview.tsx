@@ -12,14 +12,14 @@ import {
 } from '@formily/react'
 import { FormItem } from '@formily/next'
 import { each, reduce } from '@formily/shared'
-import { createBehavior } from '@designable/core'
+import { createBehavior } from '@designable2/core'
 import {
   useDesigner,
   useTreeNode,
   useComponents,
   DnFC,
-} from '@designable/react'
-import { isArr, isStr } from '@designable/shared'
+} from '@designable2/react'
+import { isArr, isStr } from '@designable2/shared'
 import { Container } from '../../common/Container'
 import { AllLocales } from '../../locales'
 

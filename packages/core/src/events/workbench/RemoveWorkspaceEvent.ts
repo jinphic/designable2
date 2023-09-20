@@ -1,4 +1,4 @@
-import { ICustomEvent } from '@designable/shared'
+import { ICustomEvent } from '@designable2/shared'
 import { AbstractWorkspaceEvent } from './AbstractWorkspaceEvent'
 
 export class RemoveWorkspaceEvent

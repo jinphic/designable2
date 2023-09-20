@@ -1,4 +1,4 @@
-import { createLocales } from '@designable/core'
+import { createLocales } from '@designable2/core'
 import { DatePicker } from './DatePicker'
 
 export const TimePicker = createLocales(DatePicker, {

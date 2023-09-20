@@ -6,11 +6,11 @@ import {
   DragMoveEvent,
   DragStopEvent,
   CursorDragType,
-} from '@designable/core'
+} from '@designable2/core'
 import {
   calcSpeedFactor,
   createUniformSpeedAnimation,
-} from '@designable/shared'
+} from '@designable2/shared'
 import { useScreen, useDesigner, usePrefix } from '../../hooks'
 import { IconWidget } from '../../widgets'
 import { ResizeHandle, ResizeHandleType } from './handle'

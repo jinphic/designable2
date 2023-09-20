@@ -1,1 +1,1 @@
-# @designable/react
+# @designable2/react

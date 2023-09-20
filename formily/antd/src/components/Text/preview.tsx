@@ -1,6 +1,6 @@
 import React from 'react'
-import { createBehavior, createResource } from '@designable/core'
-import { DnFC } from '@designable/react'
+import { createBehavior, createResource } from '@designable2/core'
+import { DnFC } from '@designable2/react'
 import { createVoidFieldSchema } from '../Field'
 import { AllSchemas } from '../../schemas'
 import { AllLocales } from '../../locales'

@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from 'react'
-import { isFn, globalThisPolyfill } from '@designable/shared'
+import { isFn, globalThisPolyfill } from '@designable2/shared'
 import {
   useDesigner,
   useWorkspace,
   useLayout,
   usePrefix,
-} from '@designable/react'
+} from '@designable2/react'
 import ReactDOM from 'react-dom'
 
 export interface ISandboxProps {

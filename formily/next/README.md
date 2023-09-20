@@ -1,7 +1,7 @@
-# @designable/formily-next
+# @designable2/formily-next
 
 ### Install
 
 ```bash
-npm install --save @designable/formily-next
+npm install --save @designable2/formily-next
 ```

@@ -8,7 +8,7 @@ import {
   isPointInRect,
   IPoint,
   Rect,
-} from '@designable/shared'
+} from '@designable2/shared'
 import { DragNodeEvent, DropNodeEvent } from '../events'
 import { Viewport } from './Viewport'
 import { CursorDragType } from './Cursor'

@@ -17,17 +17,17 @@ import {
   ViewPanel,
   SettingsPanel,
   ComponentTreeWidget,
-} from '@designable/react'
+} from '@designable2/react'
 import {
   SettingsForm,
   setNpmCDNRegistry,
-} from '@designable/react-settings-form'
+} from '@designable2/react-settings-form'
 import {
   createDesigner,
   GlobalRegistry,
   Shortcut,
   KeyCode,
-} from '@designable/core'
+} from '@designable2/core'
 import {
   LogoWidget,
   ActionsWidget,
