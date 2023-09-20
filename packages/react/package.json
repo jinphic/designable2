@@ -1,6 +1,6 @@
 {
   "name": "@designable2/react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -33,8 +33,8 @@
     "react": "16.x || 17.x"
   },
   "dependencies": {
-    "@designable2/core": "0.0.4",
-    "@designable2/shared": "0.0.4",
+    "@designable2/core": "0.0.5",
+    "@designable2/shared": "0.0.5",
     "dateformat": "^4.5.1"
   },
   "publishConfig": {
