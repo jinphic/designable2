@@ -1,18 +1,18 @@
 {
   "name": "@designable2/formily-antd",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "lib",
   "module": "esm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alibaba/designable.git"
+    "url": "https://github.com/jinphic/designable2.git"
   },
   "types": "esm/index.d.ts",
   "bugs": {
-    "url": "https://github.com/alibaba/designable/issues"
+    "url": "https://github.com/jinphic/designable2.git/issues"
   },
-  "homepage": "https://github.com/alibaba/designable#readme",
+  "homepage": "https://github.com/jinphic/designable2.git#readme",
   "engines": {
     "npm": ">=3.0.0"
   },
@@ -24,7 +24,7 @@
     "start": "webpack-dev-server --config playground/webpack.dev.ts"
   },
   "devDependencies": {
-    "@designable2/react-settings-form": "0.0.2",
+    "@designable2/react-settings-form": "0.0.3",
     "@formily/antd": "^2.0.2",
     "@formily/core": "^2.0.2",
     "@formily/react": "^2.0.2",
@@ -60,10 +60,10 @@
     "react-is": ">=16.8.0 || >=17.0.0"
   },
   "dependencies": {
-    "@designable2/core": "0.0.2",
-    "@designable2/formily-setters": "0.0.2",
-    "@designable2/formily-transformer": "0.0.2",
-    "@designable2/react": "0.0.2"
+    "@designable2/core": "0.0.3",
+    "@designable2/formily-setters": "0.0.3",
+    "@designable2/formily-transformer": "0.0.3",
+    "@designable2/react": "0.0.3"
   },
   "publishConfig": {
     "access": "public"

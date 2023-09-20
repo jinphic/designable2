@@ -1,6 +1,6 @@
 {
   "name": "@designable2/react-sandbox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
@@ -10,12 +10,12 @@
   "module": "esm",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alibaba/designable.git"
+    "url": "git+https://github.com/jinphic/designable2.git"
   },
   "bugs": {
-    "url": "https://github.com/alibaba/designable/issues"
+    "url": "https://github.com/jinphic/designable2/issues"
   },
-  "homepage": "https://github.com/alibaba/designable#readme",
+  "homepage": "https://github.com/jinphic/designable2#readme",
   "scripts": {
     "build": "rimraf -rf lib esm dist && npm run build:cjs && npm run build:esm && npm run build:umd",
     "build:cjs": "tsc --project tsconfig.build.json",
@@ -26,8 +26,8 @@
     "react": "16.x || 17.x"
   },
   "dependencies": {
-    "@designable2/react": "0.0.2",
-    "@designable2/shared": "0.0.2"
+    "@designable2/react": "0.0.3",
+    "@designable2/shared": "0.0.3"
   },
   "publishConfig": {
     "access": "public"
