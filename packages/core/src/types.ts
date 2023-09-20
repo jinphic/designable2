@@ -127,10 +127,16 @@ export interface IDesignerStore<P> {
 
 export type IDesignerIcons = Record<string, any>
 
+export type IDesignerValidator = {
+  label: string
+  value: string
+}
+
 export type IDesignerIconsStore = IDesignerStore<IDesignerIcons>
 export type IDesignerLocaleStore = IDesignerStore<IDesignerLocales>
 export type IDesignerBehaviorStore = IDesignerStore<IBehavior[]>
 export type IDesignerLanguageStore = IDesignerStore<string>
+export type IDesignerValidatorsStore = IDesignerStore<IDesignerValidator[]>
 
 export type WorkbenchTypes =
   | 'DESIGNABLE'

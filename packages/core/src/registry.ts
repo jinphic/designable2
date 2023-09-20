@@ -11,11 +11,14 @@ import {
   IDesignerIcons,
   IBehaviorLike,
   IBehavior,
+  IDesignerValidator,
+  IDesignerValidatorsStore,
 } from './types'
 import { mergeLocales, lowerSnake, getBrowserLanguage } from './internals'
 import { isBehaviorHost } from './externals'
 import { TreeNode } from './models'
 import { isBehaviorList } from './externals'
+import { registerValidateFormats } from '@formily/core'
 
 const getISOCode = (language: string) => {
   let isoCode = DESIGNER_LANGUAGE_STORE.value
@@ -72,6 +75,22 @@ const DESIGNER_LANGUAGE_STORE: IDesignerLanguageStore = observable.ref(
   getBrowserLanguage()
 )
 
+const defaultValidators = [
+  'url',
+  'email',
+  'number',
+  'integer',
+  'idcard',
+  'phone',
+  'money',
+  'zh',
+  'date',
+  'zip',
+]
+const DESIGNER_VALIDATORS_STORE: IDesignerValidatorsStore = observable.ref(
+  defaultValidators.map((item) => ({ label: item, value: item }))
+)
+
 const DESIGNER_GlobalRegistry = {
   setDesignerLanguage: (lang: string) => {
     DESIGNER_LANGUAGE_STORE.value = lang
@@ -101,6 +120,16 @@ const DESIGNER_GlobalRegistry = {
     return DESIGNER_ICONS_STORE[name]
   },
 
+  getDesignerValidator: (value: string) => {
+    return DESIGNER_VALIDATORS_STORE.value.filter(
+      (item) => item.value === value
+    )
+  },
+
+  getAllDesignerValidators: () => {
+    return DESIGNER_VALIDATORS_STORE.value
+  },
+
   getDesignerLanguage: () => {
     return getISOCode(DESIGNER_LANGUAGE_STORE.value)
   },
@@ -123,6 +152,17 @@ const DESIGNER_GlobalRegistry = {
 
   registerDesignerIcons: (map: IDesignerIcons) => {
     Object.assign(DESIGNER_ICONS_STORE, map)
+  },
+
+  registerDesignerValidators(list: (IDesignerValidator & { regx: RegExp })[]) {
+    const formats = list.reduce((pre, cur) => {
+      return {
+        ...pre,
+        [cur.value]: cur.regx,
+      }
+    }, {})
+    registerValidateFormats(formats)
+    DESIGNER_VALIDATORS_STORE.value.push(...list)
   },
 
   registerDesignerLocales: (...packages: IDesignerLocales[]) => {

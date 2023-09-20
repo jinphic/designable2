@@ -156,9 +156,7 @@ export const ValidatorSetter: React.FC<IValidatorSetterProps> = observer(
             placeholder={GlobalRegistry.getDesignerMessage(
               'SettingComponents.ValidatorSetter.pleaseSelect'
             )}
-            options={GlobalRegistry.getDesignerMessage(
-              'SettingComponents.ValidatorSetter.formats'
-            )}
+            options={GlobalRegistry.getAllDesignerValidators()}
           />
         </FoldItem.Base>
         <FoldItem.Extra>
