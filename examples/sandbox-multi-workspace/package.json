@@ -1,6 +1,6 @@
 {
   "name": "@designable2/sandbox-multi-workspace-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "private": true,
   "engines": {
@@ -25,11 +25,11 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@designable2/core": "0.0.1",
-    "@designable2/react": "0.0.1",
-    "@designable2/react-sandbox": "0.0.1",
-    "@designable2/react-settings-form": "0.0.1",
-    "@designable2/shared": "0.0.1",
+    "@designable2/core": "0.0.2",
+    "@designable2/react": "0.0.2",
+    "@designable2/react-sandbox": "0.0.2",
+    "@designable2/react-settings-form": "0.0.2",
+    "@designable2/shared": "0.0.2",
     "@formily/reactive": "^2.0.2",
     "@formily/reactive-react": "^2.0.2",
     "antd": "^4.15.2",
